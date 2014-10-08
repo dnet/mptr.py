@@ -96,7 +96,7 @@ def track_item_iter(number):
 		timestamp = datetime.strptime(''.join(ifilter(None, imap(unicode.strip, imap(unicode,
 			row.xpath('td[@class="date"]//text()'))))), '%Y.%m.%d%H:%M')
 		(place_td,) = row.xpath('td[@class="place"]')
-		(place,) = place_td.xpath('span/text()')
+		(place,) = place_td.xpath('span/text()') or ['N/A']
 		info = ''.join(ifilter(None, imap(unicode.strip, imap(unicode, place_td.xpath('p//text()')))))
 		yield TRACK_ENTRY(timestamp=timestamp, place=place, info=info)
 
