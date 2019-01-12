@@ -1,5 +1,5 @@
-⚠️ *NOTICE: (2019-01-12)* Magyar Posta redesigned their tracking site *and* added
-a CAPTCHA, thus this script cannot handle the site and even if it were updated,
+⚠️ **NOTICE: (2019-01-12)** Magyar Posta redesigned their tracking site **and** added
+a CAPTCHA, thus this script cannot handle the site and even if it was updated,
 it would need a CAPTCHA solver. I'm only leaving it here for educational and
 archival purposes, there's no point in trying to run it as-is.
 
